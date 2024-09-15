@@ -1,24 +1,21 @@
-# automatic-number-plate-recognition-python-yolov8
+# Automatic Number Plate Recognition (ANPR)
 
-<p align="center">
-<a href="https://www.youtube.com/watch?v=fyJB1t0o0ms">
-    <img width="600" src="https://utils-computervisiondeveloper.s3.amazonaws.com/thumbnails/with_play_button/anpr_yolo2.jpg" alt="Watch the video">
-    </br>Watch on YouTube: Automatic number plate recognition with Python, Yolov8 and EasyOCR !
-</a>
-</p>
+## Project Overview
+This project implements **Automatic Number Plate Recognition (ANPR)** using the **YOLOv8 (You Only Look Once)** object detection algorithm.
 
-## data
+It detects vehicle license plates and uses Optical Character Recognition (OCR) to extract and recognize the characters on the plates.
 
-The video I used in this tutorial can be downloaded [here](https://www.pexels.com/video/traffic-flow-in-the-highway-2103099/).
+## Key Features
+- Real-time detection of number plates from images or video feeds.
+- Character recognition using EasyOCR for accurate text extraction.
+- Utilizes YOLOv8 for efficient and accurate number plate detection.
+- Handles a variety of vehicle plate styles and lighting conditions.
 
-## models
-
-A Yolov8 pretrained model was used to detect vehicles.
-
-A licensed plate detector was used to detect license plates. The model was trained with Yolov8 using [this dataset](https://universe.roboflow.com/roboflow-universe-projects/license-plate-recognition-rxg4e/dataset/4) and following this [step by step tutorial on how to train an object detector with Yolov8 on your custom data](https://github.com/computervisioneng/train-yolov8-custom-dataset-step-by-step-guide). 
-
-The trained model is available in my [Patreon](https://www.patreon.com/ComputerVisionEngineer).
-
-## dependencies
-
-The sort module needs to be downloaded from [this repository](https://github.com/abewley/sort) as mentioned in the [video](https://youtu.be/fyJB1t0o0ms?t=1120).
+## Libraries and Dependencies
+- **Ultralytics YOLOv8 (v8.0.114)**: For object detection and localization of number plates.
+- **pandas (v2.0.2)**: Data manipulation and handling for processing results.
+- **OpenCV (v4.7.0.72)**: Image and video processing for detecting number plates.
+- **numpy (v1.24.3)**: Numerical operations and array handling for image data.
+- **scipy (v1.10.1)**: Used for advanced image processing and mathematical operations.
+- **EasyOCR (v1.7.0)**: Optical Character Recognition to extract text from the detected plates.
+- **FilterPy (v1.4.5)**: For tracking and filtering data to improve detection accuracy.
